@@ -2,9 +2,9 @@ name: Dart CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ none ]
   pull_request:
-    branches: [ master ]
+    branches: [ none ]
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
       run: pub get
     - name: Run tests
       run: pub run test --coverage
-      
+
     # Code coverage can be acitivated once its ready.
     - name: Upload coverage to codecov
       uses: codecov/codecov-action@v1
