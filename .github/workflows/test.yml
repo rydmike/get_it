@@ -1,5 +1,3 @@
-# This GitHub action is configured to run "on" push to "master".
-# Currently, using the "validate" workflow instead, this is an older test CI/CD.
 # This workflow:
 #  - Installs dart and flutter
 #  - Uses flutter stable channel.
